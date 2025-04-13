@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customers - PKR Accounts</title>
+  <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 flex h-screen overflow-hidden">
+  <div id="sidebar" class="w-64 h-full bg-white border-r border-gray-200 flex flex-col">
+    <div class="p-4 border-b border-gray-200">
+      <h1 class="text-xl font-bold text-black">PKR Accounts</h1>
+    </div>
+    <nav class="flex-1 overflow-y-auto py-4">
+      <ul>
+        <li class="mb-1">
+          <a href="index.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            Dashboard
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="stock.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12c-1.1 0-2 .9-2 2s.9 2 2 2h4v-4z"/></svg>
+            Stock
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="customers.html" class="flex items-center px-4 py-3 text-black hover:bg-gray-100 rounded-lg mx-2 active-nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Customers
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+            Reports
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Settings
+          </a>
+        </li>
+        <li class="mt-6">
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"/><path d="M16 17.5c0-1.38-2-2.5-4-2.5s-4 1.12-4 2.5"/><line x1="12" y1="14" x2="12" y2="21"/><line x1="9" y1="18" x2="15" y2="18"/></svg>
+            Backup & Restore
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="p-4 border-t border-gray-200">
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        <span class="text-sm text-gray-500">Logout</span>
+      </div>
+    </div>
+  </div>
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <header class="bg-white border-b border-gray-200 py-4 px-6 flex items-center justify-between">
+      <h2 class="text-xl font-medium text-black">Customers</h2>
+      <button id="addCustomerBtn" class="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        Add Customer
+      </button>
+    </header>
+    <main class="flex-1 overflow-y-auto bg-gray-50 p-6">
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phone</th>
+                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Total Debit (PKR)</th>
+                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Total Credit (PKR)</th>
+                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Balance (PKR)</th>
+                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" id="customersList">
+              <!-- Customer items will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Add Customer Modal -->
+  <div id="addCustomerModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4">
+      <div class="border-b border-gray-200 px-6 py-4">
+        <h3 class="text-lg font-medium text-gray-900">Add Customer</h3>
+      </div>
+      <form id="addCustomerForm" class="px-6 py-4">
+        <div class="mb-4">
+          <label for="customerName" class="block text-sm font-medium text-gray-700 mb-1">Customer Name</label>
+          <input type="text" id="customerName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="customerPhone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+          <input type="text" id="customerPhone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="customerAddress" class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+          <textarea id="customerAddress" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black"></textarea>
+        </div>
+        <div class="flex justify-end border-t border-gray-200 pt-4">
+          <button type="button" id="cancelAddCustomer" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 mr-2">
+            Cancel
+          </button>
+          <button type="submit" class="px-4 py-2 bg-black text-white text-sm font-medium rounded-md hover:bg-gray-800">
+            Add Customer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit Customer Modal -->
+  <div id="editCustomerModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4">
+      <div class="border-b border-gray-200 px-6 py-4">
+        <h3 class="text-lg font-medium text-gray-900">Edit Customer</h3>
+      </div>
+      <form id="editCustomerForm" class="px-6 py-4">
+        <input type="hidden" id="editCustomerId">
+        <div class="mb-4">
+          <label for="editCustomerName" class="block text-sm font-medium text-gray-700 mb-1">Customer Name</label>
+          <input type="text" id="editCustomerName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="editCustomerPhone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+          <input type="text" id="editCustomerPhone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="editCustomerAddress" class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+          <textarea id="editCustomerAddress" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black"></textarea>
+        </div>
+        <div class="flex justify-end border-t border-gray-200 pt-4">
+          <button type="button" id="cancelEditCustomer" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 mr-2">
+            Cancel
+          </button>
+          <button type="submit" class="px-4 py-2 bg-black text-white text-sm font-medium rounded-md hover:bg-gray-800">
+            Update Customer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Customer Details Modal -->
+  <div id="customerDetailsModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-5xl mx-4">
+      <div class="border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+        <h3 class="text-lg font-medium text-gray-900">Customer Details</h3>
+        <button id="closeCustomerDetails" class="text-gray-400 hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-gray-50 p-4 rounded-md">
+            <h4 class="text-sm font-medium text-gray-500 mb-1">Total Debit</h4>
+            <p class="text-2xl font-semibold text-black" id="customerDetailDebit">PKR 0.00</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-md">
+            <h4 class="text-sm font-medium text-gray-500 mb-1">Total Credit</h4>
+            <p class="text-2xl font-semibold text-black" id="customerDetailCredit">PKR 0.00</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-md">
+            <h4 class="text-sm font-medium text-gray-500 mb-1">Balance</h4>
+            <p class="text-2xl font-semibold" id="customerDetailBalance">PKR 0.00</p>
+          </div>
+        </div>
+        <h4 class="text-lg font-medium text-gray-900 mb-4">Transaction History</h4>
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Debit (PKR)</th>
+                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Credit (PKR)</th>
+                <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Balance (PKR)</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" id="customerTransactionsList">
+              <!-- Transaction history will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirm Delete Modal -->
+  <div id="confirmDeleteModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4">
+      <div class="px-6 py-4">
+        <h3 class="text-lg font-medium text-gray-900 mb-2">Confirm Delete</h3>
+        <p class="text-gray-500">Are you sure you want to delete this customer? This action cannot be undone and will remove all transaction history.</p>
+      </div>
+      <div class="flex justify-end border-t border-gray-200 px-6 py-4">
+        <button type="button" id="cancelDelete" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 mr-2">
+          Cancel
+        </button>
+        <button type="button" id="confirmDelete" class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed top-4 right-4 z-50 hidden">
+    <div class="bg-black text-white px-4 py-3 rounded-lg shadow-lg">
+      <div class="flex items-center">
+        <svg class="h-6 w-6 mr-3 text-white" id="toastIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        <div>
+          <p class="font-medium" id="toastTitle">Notification</p>
+          <p class="text-sm" id="toastMessage">This is a notification message</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/js/database.js"></script>
+  <script src="./src/js/customers.js"></script>
+</body>
+</html>

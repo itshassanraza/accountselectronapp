@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Management - PKR Accounts</title>
+  <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body class="bg-white text-gray-900 flex h-screen overflow-hidden">
+  <div id="sidebar" class="w-64 h-full bg-white border-r border-gray-200 flex flex-col">
+    <div class="p-4 border-b border-gray-200">
+      <h1 class="text-xl font-bold text-black">PKR Accounts</h1>
+    </div>
+    <nav class="flex-1 overflow-y-auto py-4">
+      <ul>
+        <li class="mb-1">
+          <a href="index.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            Dashboard
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="stock.html" class="flex items-center px-4 py-3 text-black hover:bg-gray-100 rounded-lg mx-2 active-nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12c-1.1 0-2 .9-2 2s.9 2 2 2h4v-4z"/></svg>
+            Stock
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="customers.html" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Customers
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+            Reports
+          </a>
+        </li>
+        <li class="mb-1">
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Settings
+          </a>
+        </li>
+        <li class="mt-6">
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 rounded-lg mx-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"/><path d="M16 17.5c0-1.38-2-2.5-4-2.5s-4 1.12-4 2.5"/><line x1="12" y1="14" x2="12" y2="21"/><line x1="9" y1="18" x2="15" y2="18"/></svg>
+            Backup & Restore
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="p-4 border-t border-gray-200">
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        <span class="text-sm text-gray-500">Logout</span>
+      </div>
+    </div>
+  </div>
+  <div class="flex-1 flex flex-col overflow-hidden">
+    <header class="bg-white border-b border-gray-200 py-4 px-6 flex items-center justify-between">
+      <h2 class="text-xl font-medium text-black">Stock Management</h2>
+      <button id="addStockBtn" class="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        Add Stock
+      </button>
+    </header>
+    <main class="flex-1 overflow-y-auto bg-gray-50 p-6">
+      <div class="mb-8">
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Stock Summary</h3>
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item Name</th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Color</th>
+                  <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Quantity</th>
+                  <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Avg. Price (PKR)</th>
+                  <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Total (PKR)</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200" id="stockSummaryList">
+                <!-- Stock summary items will be inserted here dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-medium text-gray-900 mb-4">Stock Entries</h3>
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item Name</th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Color</th>
+                  <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Quantity</th>
+                  <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Unit Price (PKR)</th>
+                  <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Total (PKR)</th>
+                  <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200" id="stockEntriesList">
+                <!-- Stock entries will be inserted here dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Add Stock Modal -->
+  <div id="addStockModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4">
+      <div class="border-b border-gray-200 px-6 py-4">
+        <h3 class="text-lg font-medium text-gray-900">Add Stock</h3>
+      </div>
+      <form id="addStockForm" class="px-6 py-4">
+        <div class="mb-4 relative">
+          <label for="itemName" class="block text-sm font-medium text-gray-700 mb-1">Item Name</label>
+          <div class="relative">
+            <input type="text" id="itemNameInput" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+            <button type="button" id="itemDropdownBtn" class="absolute right-0 top-0 h-full px-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div id="itemNameDropdown" class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg hidden">
+            <button type="button" id="newItemBtn" class="w-full px-4 py-2 text-sm text-left hover:bg-gray-100 border-b border-gray-200 font-medium">
+              + Add New Item
+            </button>
+            <div id="itemNamesList" class="max-h-48 overflow-y-auto">
+              <!-- Dynamic list of item names -->
+            </div>
+          </div>
+        </div>
+        <div class="mb-4 relative">
+          <label for="itemColor" class="block text-sm font-medium text-gray-700 mb-1">Color</label>
+          <div class="relative">
+            <input type="text" id="itemColorInput" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+            <button type="button" id="colorDropdownBtn" class="absolute right-0 top-0 h-full px-3 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div id="itemColorDropdown" class="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg hidden">
+            <button type="button" id="newColorBtn" class="w-full px-4 py-2 text-sm text-left hover:bg-gray-100 border-b border-gray-200 font-medium">
+              + Add New Color
+            </button>
+            <div id="itemColorsList" class="max-h-48 overflow-y-auto">
+              <!-- Dynamic list of colors -->
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="quantity" class="block text-sm font-medium text-gray-700 mb-1">Quantity</label>
+          <input type="number" id="quantity" min="1" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="unitPrice" class="block text-sm font-medium text-gray-700 mb-1">Unit Price (PKR)</label>
+          <input type="number" id="unitPrice" min="0" step="0.01" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+          <input type="date" id="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="flex justify-end border-t border-gray-200 pt-4">
+          <button type="button" id="cancelAddStock" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 mr-2">
+            Cancel
+          </button>
+          <button type="submit" id="submitAddStock" class="px-4 py-2 bg-black text-white text-sm font-medium rounded-md hover:bg-gray-800">
+            Add Stock
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit Stock Modal -->
+  <div id="editStockModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4">
+      <div class="border-b border-gray-200 px-6 py-4">
+        <h3 class="text-lg font-medium text-gray-900">Edit Stock Entry</h3>
+      </div>
+      <form id="editStockForm" class="px-6 py-4">
+        <input type="hidden" id="editStockId">
+        <div class="mb-4">
+          <label for="editItemName" class="block text-sm font-medium text-gray-700 mb-1">Item Name</label>
+          <input type="text" id="editItemName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="editItemColor" class="block text-sm font-medium text-gray-700 mb-1">Color</label>
+          <input type="text" id="editItemColor" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="editQuantity" class="block text-sm font-medium text-gray-700 mb-1">Quantity</label>
+          <input type="number" id="editQuantity" min="1" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="editUnitPrice" class="block text-sm font-medium text-gray-700 mb-1">Unit Price (PKR)</label>
+          <input type="number" id="editUnitPrice" min="0" step="0.01" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="mb-4">
+          <label for="editDate" class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+          <input type="date" id="editDate" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="flex justify-end border-t border-gray-200 pt-4">
+          <button type="button" id="cancelEditStock" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 mr-2">
+            Cancel
+          </button>
+          <button type="submit" class="px-4 py-2 bg-black text-white text-sm font-medium rounded-md hover:bg-gray-800">
+            Update Stock
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Confirm Delete Modal -->
+  <div id="confirmDeleteModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4">
+      <div class="px-6 py-4">
+        <h3 class="text-lg font-medium text-gray-900 mb-2">Confirm Delete</h3>
+        <p class="text-gray-500">Are you sure you want to delete this stock entry? This action cannot be undone.</p>
+      </div>
+      <div class="flex justify-end border-t border-gray-200 px-6 py-4">
+        <button type="button" id="cancelDelete" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 mr-2">
+          Cancel
+        </button>
+        <button type="button" id="confirmDelete" class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed top-4 right-4 z-50 hidden">
+    <div class="bg-black text-white px-4 py-3 rounded-lg shadow-lg">
+      <div class="flex items-center">
+        <svg class="h-6 w-6 mr-3 text-white" id="toastIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+        <div>
+          <p class="font-medium" id="toastTitle">Notification</p>
+          <p class="text-sm" id="toastMessage">This is a notification message</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/js/database.js"></script>
+  <script src="./src/js/stock.js"></script>
+</body>
+</html>
